@@ -2,6 +2,11 @@ section {
   display: grid;
 }
 
+
+img {
+    width: 100%;
+}
+
 /* LEVEL 01 */
 section:nth-of-type(1) .peas {
   grid-area: 1 / 1;
