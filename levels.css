@@ -1,0 +1,118 @@
+section {
+  display: grid;
+}
+
+/* LEVEL 01 */
+section:nth-of-type(1) .peas {
+  grid-area: 1 / 1;
+}
+
+section:nth-of-type(1) .onions {
+  grid-area: 1 / 2;
+}
+
+section:nth-of-type(1) .tomatoes {
+  grid-area: 2 / 1;
+}
+
+section:nth-of-type(1) .lettuce {
+  grid-area: 2 / 2;
+}
+
+section:nth-of-type(1) .carrots {
+  grid-area: 3 / 1;
+}
+
+/* LEVEL 02 */
+section:nth-of-type(2) .peas {
+  grid-area: 1 / span 2;
+}
+
+section:nth-of-type(2) .onions {
+  grid-area: 2 / 1;
+}
+
+section:nth-of-type(2) .tomatoes {
+  grid-area: 2 / 2;
+}
+
+section:nth-of-type(2) .lettuce {
+  grid-area: 3 / 1;
+}
+
+section:nth-of-type(2) .carrots {
+  grid-area: 3 / 2;
+}
+
+/* LEVEL 03 */
+section:nth-of-type(3) .peas {
+  grid-area: 1 / 1;
+}
+
+section:nth-of-type(3) .onions {
+  grid-area: 1 / span 2;
+}
+
+section:nth-of-type(3) .tomatoes {
+  grid-area: 2 / span 2;
+}
+
+section:nth-of-type(3) .lettuce {
+  grid-area: 2 / 3;
+}
+
+section:nth-of-type(3) .carrots {
+  grid-area: 3 / span 3;
+}
+
+/* LEVEL 04 - 45MINS+ SOLVE */
+section:nth-of-type(4) .peas {
+  grid-area: 1 / 1 / 1 / span 2;
+}
+
+section:nth-of-type(4) .onions {
+  grid-area: 1 / 3 / span 2;
+}
+
+section:nth-of-type(4) .tomatoes {
+  grid-area: 2 / 1;
+}
+
+section:nth-of-type(4) .lettuce {
+  grid-area: 2 / 2;
+}
+
+section:nth-of-type(4) .carrots {
+  grid-area: 1 / 4 / span 2;
+}
+
+/* LEVEL 05 - 1HR+ SOLVE */
+section:nth-of-type(5) .peas {
+  grid-area: 2 / 4 / 2 / span 2;
+}
+
+section:nth-of-type(5) .onions {
+  grid-area: 1 / 3 / span 2 / 3;
+}
+
+section:nth-of-type(5) .tomatoes {
+  grid-area: 3 / 2 / 4 / span 3;
+}
+
+section:nth-of-type(5) .lettuce {
+  grid-area: 1 / 5 / 1 / 5;
+}
+
+section:nth-of-type(5) .carrots {
+  grid-area: 1 / 1 / span 3 / 1;
+}
+
+/* LEVEL 06 - DAYHR+ SOLVE
+
+I WAS CONFUSED ON THE PARTICULAR DECLARATION TO USE. ONCE I DETERMINED THE LIST WAS ALREADY ESTABLISED, I FIGURED IT OUT - LOT OF REREADING AND TESTING.
+
+*/
+
+section:nth-of-type(6) {
+  grid-template: repeat(3, 5rem) / repeat(6, 1fr);
+}
